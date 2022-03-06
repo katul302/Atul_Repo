@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department" parallel="tests" thread-count="10">
+
+<listeners>
+<listener class-name = "test.Listeners"/>
+</listeners>
+<parameter name="URL" value="qaclickacademy.com"/>
+<parameter name="KEY" value="1233"/>
+
+	<test  name="Personal Loan" parallel="classes" thread-count="5">
+		<classes>
+			<class name="test.day1" />
+			<class name="test.day2" />
+			<class name="test.day4">
+				<methods>
+					<include name="webloginHomeLoan" />
+
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Car Loan">
+		<classes>
+			<class name="test.day3">
+				<methods>
+				<!-- Below line will exclude a particular test -->
+			<!-- <exclude name="mobileLogin" />  -->
+			<!-- Below line will exclude all test starting with mobile  -->
+			<!--  exclude name ="mobile.*"/>-->
+			<include name = "apiLogin.*"/>
+				</methods>
+			</class>
+		</classes>
+
+	</test>
+</suite> <!-- Suite -->
