@@ -1,0 +1,23 @@
+package com.thvp.test;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.thvp.base.TestBase;
+import com.thvp.pages.LandingPage;
+
+
+
+public class Login extends TestBase{
+	public static Logger log = LogManager.getLogger(TestBase.class.getName());
+	public WebDriver driver;
+	public LandingPage lp;
+	
+	@Test
+	public void loginTest() throws Exception {
+		
+	}
+
+}

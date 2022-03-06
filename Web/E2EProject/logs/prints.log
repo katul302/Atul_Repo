@@ -1,0 +1,7 @@
+17:24:01.788 [main] INFO  resources.Base - Url response from regestration page: 200
+17:24:02.190 [main] INFO  resources.Base - Url response from regestration page: 200
+17:24:11.036 [main] INFO  resources.Base - Regsitration page  is displayed
+17:24:14.380 [main] INFO  resources.Base - Regsitration is done
+17:24:14.380 [main] INFO  resources.Base - Login step started
+17:24:15.746 [main] INFO  resources.Base - Login step ended
+17:24:27.955 [main] INFO  resources.Base - Success

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Email" value="ti01@mailinator.com"/>
+  <parameter name="Pharmacy" value="Allaiance DB"/>
+  <parameter name="Phone" value="4166666666"/>
+  <parameter name="Password" value="12345678"/>
+  <test thread-count="5" name="Regression(failed)">
+    <classes>
+      <class name="com.thvp.test.TransferPrescription">
+        <methods>
+          <include name="suiteSetup"/>
+          <include name="loadBaseUrl"/>
+          <include name="screenshotAndDeleteCookies"/>
+          <include name="transfer_test2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.thvp.test.TransferPrescription -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

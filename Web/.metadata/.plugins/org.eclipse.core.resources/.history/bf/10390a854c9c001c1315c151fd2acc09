@@ -1,0 +1,119 @@
+package com.thvp.test;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.thvp.base.TestBase;
+import com.thvp.pages.CheckOut;
+import com.thvp.pages.HomePage;
+import com.thvp.pages.OrderSummary;
+import com.thvp.util.Utill;
+
+public class TransferPrescription extends TestBase {
+
+	public static Logger log = LogManager.getLogger(TestBase.class.getName());
+
+	public HomePage hp;
+	public OrderSummary os;
+	public CheckOut ck;
+	public Utill ul;
+	public Login lp;
+
+	// JavascriptExecutor js = (JavascriptExecutor) driver;
+	@Parameters({ "Email", "Password", "Pharmacy", "Phone" })
+
+	@Test(enabled = false)
+
+	public void transfer_test1(String Email, String Password, String Pharmacy, String Phone) throws Exception {
+
+		String actual_confirmation_text = "Your transfer request has been submitted";
+		lp = new Login();
+		hp = new HomePage(driver);
+		lp.loginTest(Email, Password);
+
+		hp.pres_link().click();
+		hp.transfer_tile().click();
+		Thread.sleep(2000);
+		hp.model_continue().click();
+		hp.pharmacy_name().sendKeys(Pharmacy);
+		hp.pharmcy_phone_number().sendKeys(Phone);
+		hp.continue_btn().click();
+		hp.comment().sendKeys("Test Notes");
+		hp.submit().click();
+		String confirmation_text = hp.confirmation_text().getText();
+
+		Assert.assertEquals(actual_confirmation_text, confirmation_text);
+
+		log.info("test 1 is complete for transfer flow");
+		hp.return_btn().click();
+		log.info("Return to home screen");
+	}
+
+	@Parameters({ "Email", "Password", "Pharmacy", "Phone" })
+	@Test
+	public void transfer_test2(String Email, String Password, String Pharmacy, String Phone) throws Exception {
+
+		lp = new Login();
+		hp = new HomePage(driver);
+		os = new OrderSummary(driver);
+		ck = new CheckOut(driver);
+		//ul = new Utill();
+		lp.loginTest(Email, Password);
+
+		hp.pres_link().click();
+		hp.transfer_tile().click();
+		Thread.sleep(2000);
+		hp.model_continue().click();
+		hp.pharmacy_name().sendKeys(Pharmacy);
+		hp.pharmcy_phone_number().sendKeys(Phone);
+		hp.continue_btn().click();
+		hp.radio4().click();
+		hp.comment().sendKeys("Test Notes");
+		hp.submit().click();
+
+		Thread.sleep(2000);
+
+		os.proceed().click();
+
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", ck.alt_add_radio());
+
+		ck.alt_add_radio().click();
+		log.info("utill Address 1" + Utill.Address_L1 + " and utill Address_L2" + Utill.Address_L2 + "and utill city" + Utill.city + "and utill Postal" + Utill.Postal
+				+ "and utill Delivery_phone" + Utill.Delivery_phone + " utill Ext" + Utill.Ext);
+		String Address_L1 = Utill.Address_L1;
+
+		String Address_L2 = Utill.Address_L2;
+		String city = Utill.city;
+		String Postal = Utill.Postal;
+		String Delivery_phone = Utill.Delivery_phone;
+		String Ext = Utill.Ext;
+		
+
+		log.info("Address 1" + Address_L1 + " and Address_L2" + Address_L2 + "and city" + city + "and Postal" + Postal
+				+ "and Delivery_phone" + Delivery_phone + "Ext" + Ext);
+		ck.alt_add_radio().click();
+		ck.add_l1().sendKeys(Address_L1);
+		ck.add_l2().sendKeys(Address_L2);
+		ck.city().sendKeys(city);
+
+		Select pd = new Select(ck.province());
+
+		pd.selectByVisibleText("ON - Ontario");
+
+		ck.postal().sendKeys(Postal);
+		ck.phone().sendKeys(Delivery_phone);
+		ck.ext().sendKeys(Ext);
+
+		Thread.sleep(2000);
+
+		ck.continue_btn().click();
+
+		Thread.sleep(2000);
+
+	}
+}

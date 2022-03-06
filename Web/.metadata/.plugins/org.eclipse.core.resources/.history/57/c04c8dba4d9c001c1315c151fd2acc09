@@ -1,0 +1,9 @@
+package com.thvp.pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class Consultation {
+
+	public WebDriver driver;
+	
+}

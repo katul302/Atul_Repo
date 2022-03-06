@@ -1,0 +1,21 @@
+package com.thvp.base;
+
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class TestBase {
+
+	protected static WebDriver driver;
+	public static Properties envConfig;
+	WebDriverWait wait;
+
+	// Environment value fetched from POM with 'careersIn' and 'production' being
+	// the valid values
+	public static final String ENV = System.getProperty("env", "Production");
+
+	// BROWSER value fetched from POM with Chrome being the default value
+	private static final String BROWSER = System.getProperty("browser", "Chrome");
+
+}

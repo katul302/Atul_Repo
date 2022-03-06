@@ -1,0 +1,7 @@
+22:35:17.417 [main] INFO  com.thvp.base.TestBase - Login successfully
+22:36:48.017 [main] INFO  com.thvp.base.TestBase - Get title of the page to verify user land on login page
+22:36:48.033 [main] INFO  com.thvp.base.TestBase - Code to verify title of login page completed
+22:36:48.034 [main] INFO  com.thvp.base.TestBase - Steps to login started
+22:36:53.332 [main] INFO  com.thvp.base.TestBase - Login successfully
+22:45:47.676 [main] INFO  com.thvp.base.TestBase - Get title of the page to verify user land on login page
+22:45:47.707 [main] INFO  com.thvp.base.TestBase - Code to verify title of login page completed

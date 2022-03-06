@@ -1,0 +1,29 @@
+package Academy;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import pageObjects.LandingPage;
+import pageObjects.LoginPage;
+import resources.Base;
+
+public class HomePage extends Base{
+
+	
+	@Test
+	public void basePageNavigation() throws IOException {
+		
+		driver=inintializeDriver();
+		driver.get("http://qaclickacademy.com");
+		
+		LandingPage lp = new LandingPage(driver);
+		lp.getLogin().click();
+		
+		LoginPage l = new LoginPage(driver);
+		l.getEmail().sendKeys("abc@gmail.com");
+		l.getPass().sendKeys("12345");
+	}
+	
+	
+}

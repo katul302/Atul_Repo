@@ -1,0 +1,12 @@
+package com.thvp.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class HomePage {
+	
+	public WebDriver driver;
+
+  private By link =	By.linkText("Prescriptions");
+
+}

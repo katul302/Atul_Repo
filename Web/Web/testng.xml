@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name = "Email" value ="katul302@gmail.com"/>
+<parameter name = "First" value ="Atul"/>
+<parameter name = "Last" value ="Sharma"/>
+<parameter name = "Password" value ="12345678"/>
+<parameter name = "Fname" value ="Atul"/>
+<parameter name = "Lname" value ="Sharma"/>
+<parameter name = "Company" value ="Test"/>
+<parameter name = "address1" value = "123 main"/>
+<parameter name = "address2" value = "test"/>
+<parameter name = "city" value = "New Jerrsey"/>
+<parameter name = "postal" value = "07701"/>
+<parameter name = "Mobile" value = "416-666-6666"/>
+<parameter name = "alias" value = "Home"/>
+
+  <test name="Validating Landing Page">
+    <classes>
+      <class name="automationpractice.LandingPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="User Registration">
+    <classes>
+      <class name="automationpractice.UserRegestration"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="User Login">
+    <classes>
+      <class name="automationpractice.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

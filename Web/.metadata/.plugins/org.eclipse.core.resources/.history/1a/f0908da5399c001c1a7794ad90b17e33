@@ -1,0 +1,22 @@
+package com.thvp.util;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class Utill {
+
+	public WebDriver driver;
+	public Properties prop;
+
+	public void getProp() throws FileNotFoundException {
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream(
+				System.getProperty("user.dir") + "\\src\\test\\java\\com\\thvp\\configuration\\common.properties");
+		prop.load(fis);
+
+	}
+
+}

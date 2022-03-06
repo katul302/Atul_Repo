@@ -1,0 +1,9 @@
+17:39:25.554 [main] DEBUG beta.Demo1 - I am debugging beta
+17:39:25.556 [main] ERROR beta.Demo1 - Error messgae beta
+17:39:25.556 [main] DEBUG beta.Demo1 - Object is present beta
+17:39:25.556 [main] INFO  beta.Demo1 - test message beta 
+17:39:25.556 [main] ERROR beta.Demo1 - object is not present beta
+17:39:25.556 [main] FATAL beta.Demo1 - this is fatal error beta
+17:40:27.058 [main] DEBUG alpha.Demo - I am debugging alpha
+17:40:27.060 [main] ERROR alpha.Demo - Error messgae alpha
+17:40:27.061 [main] DEBUG alpha.Demo - Object is present alpha

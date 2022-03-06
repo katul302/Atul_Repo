@@ -1,0 +1,8 @@
+19:19:13.751 [main] INFO  resources.Base - Success
+22:05:30.826 [main] INFO  resources.Base - Driver is intialized
+22:05:33.121 [main] INFO  resources.Base - Navigated to Home page
+22:05:33.303 [main] INFO  resources.Base - Sucessfully validated Text Message
+22:05:39.076 [main] INFO  resources.Base - Navigation bar is displayed
+22:05:50.943 [main] INFO  resources.Base - Success
+22:21:41.353 [main] INFO  resources.Base - Success
+22:22:18.097 [main] INFO  resources.Base - Navigation bar is displayed

@@ -1,0 +1,4 @@
+# Created at 2022-03-05T08:12:33.624
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Web\Telus\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

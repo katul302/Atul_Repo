@@ -1,0 +1,29 @@
+package com.thvp.util;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+
+public class Utill {
+
+	public String Address_L1 = "test";
+	public Properties prop;
+
+	public void getProp() throws IOException {
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream(
+				System.getProperty("user.dir") + "\\src\\test\\java\\com\\thvp\\configuration\\common.properties");
+		prop.load(fis);
+		
+		String Address_L1 = System.getProperty("Address Line 1");
+		String Address_L2 = System.getProperty("Address Line 2");
+		String city = System.getProperty("City or town");
+		String Postal = System.getProperty("Postal code");
+		String Delivery_phone = System.getProperty("Delivery phone number");
+		String Ext = System.getProperty("Ext");
+
+	}
+
+}

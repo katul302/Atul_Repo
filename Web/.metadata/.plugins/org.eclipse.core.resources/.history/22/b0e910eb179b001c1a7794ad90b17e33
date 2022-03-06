@@ -1,0 +1,12 @@
+package com.thvp.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class LandingPage {
+	
+	public WebDriver driver;
+	
+	By login_btn = By.cssSelector(".b-welcome__login.btn.btn-primary");
+
+}

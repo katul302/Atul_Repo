@@ -1,0 +1,9 @@
+20:04:30.711 [main] DEBUG beta.Demo1 - Object is present beta
+20:04:30.714 [main] INFO  beta.Demo1 - test message beta 
+20:04:30.714 [main] ERROR beta.Demo1 - object is not present beta
+20:04:30.715 [main] FATAL beta.Demo1 - this is fatal error beta
+20:05:05.484 [main] DEBUG beta.Demo1 - I am debugging beta
+20:05:05.486 [main] ERROR beta.Demo1 - Error messgae beta
+20:05:05.486 [main] DEBUG beta.Demo1 - Object is present beta
+20:05:05.486 [main] INFO  beta.Demo1 - test message beta 
+20:05:05.487 [main] ERROR beta.Demo1 - object is not present beta

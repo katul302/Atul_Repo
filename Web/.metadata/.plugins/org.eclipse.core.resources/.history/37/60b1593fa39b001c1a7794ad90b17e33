@@ -1,0 +1,42 @@
+package com.thvp.test;
+
+import java.io.IOException;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.thvp.base.TestBase;
+import com.thvp.pages.LandingPage;
+
+
+
+public class Login extends TestBase{
+	public static Logger log = LogManager.getLogger(TestBase.class.getName());
+	
+	public LandingPage lp;
+	
+	
+	
+	
+	
+	
+	@Test
+	public void loginTest() throws Exception {
+		lp = new  LandingPage(driver);
+		lp.login().click();
+		
+		log.info("Click login button");
+		
+	String login_title =	driver.getTitle();
+	
+	String expected_title = "Login | TELUS PharmaConnect� for Patients";
+	log.info("Title of the page " + login_title);
+	Assert.assertEquals(expected_title, login_title);
+
+	}
+
+}

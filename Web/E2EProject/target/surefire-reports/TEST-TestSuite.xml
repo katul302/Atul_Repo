@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="82.205" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Web\E2EProject\target\test-classes;D:\Web\E2EProject\target\classes;C:\Users\atulkumar.sharma\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\atulkumar.sharma\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\atulkumar.sharma\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\atulkumar.sharma\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\atulkumar.sharma\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\atulkumar.sharma\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\atulkumar.sharma\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\atulkumar.sharma\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\atulkumar.sharma\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\atulkumar.sharma\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\atulkumar.sharma\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar;C:\Users\atulkumar.sharma\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\atulkumar.sharma\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\atulkumar.sharma\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\atulkumar.sharma\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="D:\Automation\jdk-17_windows-x64_bin\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\atulkumar.sharma\AppData\Local\Temp\surefire12481196524428379824\surefirebooter11832625871612884119.jar C:\Users\atulkumar.sharma\AppData\Local\Temp\surefire12481196524428379824 2022-02-20T17-23-06_140-jvmRun1 surefire11502566689564649912tmp surefire_012677646481397992724tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Web\E2EProject\target\test-classes;D:\Web\E2EProject\target\classes;C:\Users\atulkumar.sharma\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\atulkumar.sharma\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\atulkumar.sharma\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\atulkumar.sharma\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\atulkumar.sharma\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\atulkumar.sharma\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\atulkumar.sharma\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\atulkumar.sharma\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\atulkumar.sharma\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\atulkumar.sharma\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\atulkumar.sharma\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\atulkumar.sharma\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar;C:\Users\atulkumar.sharma\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\atulkumar.sharma\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\atulkumar.sharma\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\atulkumar.sharma\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\atulkumar.sharma\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\atulkumar.sharma\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\atulkumar.sharma"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-09-14"/>
+    <property name="java.home" value="D:\Automation\jdk-17_windows-x64_bin\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Web\E2EProject"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\atulkumar.sharma\AppData\Local\Temp\surefire12481196524428379824\surefirebooter11832625871612884119.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17+35-LTS-2724"/>
+    <property name="user.name" value="atulkumar.sharma"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="browser" value="firefox"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\atulkumar.sharma\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ATULKU~1.SHA\AppData\Local\Temp\"/>
+    <property name="java.version" value="17"/>
+    <property name="user.dir" value="D:\Web\E2EProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="D:\Web\E2EProject\src\main\java\resources\geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="D:\Automation\jdk-17_windows-x64_bin\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Automation\apache-maven-3.8.2-bin\apache-maven-3.8.2/bin;D:\Automation\jdk-17_windows-x64_bin\jdk-17/bin;D:\Automation\jdk-17_windows-x64_bin\jdk-17/bin;C:\Python310\Scripts\;C:\Python310\;D:\Automation\apache-maven-3.8.2-bin\apache-maven-3.8.2\bin;C:\Program Files\AdoptOpenJDK\jre-15.0.1.9-hotspot\bin;C:\Program Files\AdoptOpenJDK\jre-8.0.275.1-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;C:\KrollWin;C:\Users\atulkumar.sharma\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\atulkumar.sharma\AppData\Local\Microsoft\WindowsApps;D:\Automation\apache-maven-3.8.2-bin\apache-maven-3.8.2\bin;C:\Users\atulkumar.sharma\AppData\Roaming\npm;D:\Soap\axis2-1.6.2\axis2-1.6.2\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17+35-LTS-2724"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="basePageNavigation" classname="Academy.TitleVerification" time="0.071">
+    <system-err><![CDATA[1645357989440	geckodriver	INFO	Listening on 127.0.0.1:21958
+1645357989993	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ATULKU~1.SHA\\AppData\\Local\\Temp\\rust_mozprofilefZVkAD"
+1645357991700	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\atulkumar.sharma\\AppData\\Local\\Temp\\rust_mozprofilefZVkAD\\search.json.mozlz4", (void 0)))
+1645357997807	Marionette	INFO	Listening on port 49985
+1645357998186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Feb 20, 2022 5:23:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="headerVerification" classname="Academy.TitleVerification" time="0.02"/>
+  <testcase name="basePageNavigation" classname="Academy.navigationBarValidation" time="0.088">
+    <system-err><![CDATA[1645358001440	Marionette	INFO	Stopped listening on port 49985
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645358003667	geckodriver	INFO	Listening on 127.0.0.1:26177
+1645358003741	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ATULKU~1.SHA\\AppData\\Local\\Temp\\rust_mozprofilezrPH0z"
+1645358004462	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\atulkumar.sharma\\AppData\\Local\\Temp\\rust_mozprofilezrPH0z\\search.json.mozlz4", (void 0)))
+1645358007320	Marionette	INFO	Listening on port 50281
+1645358007562	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Feb 20, 2022 5:23:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="basePageNavigation[nonrestricted@gmail.com, 1234567, Restricted user](1)" classname="Academy.HomePage" time="6.447">
+    <system-err><![CDATA[1645358010471	Marionette	INFO	Stopped listening on port 50281
+[Parent 48616, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645358012284	geckodriver	INFO	Listening on 127.0.0.1:7101
+1645358012366	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ATULKU~1.SHA\\AppData\\Local\\Temp\\rust_mozprofileR6rrhE"
+1645358013040	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\atulkumar.sharma\\AppData\\Local\\Temp\\rust_mozprofileR6rrhE\\search.json.mozlz4", (void 0)))
+1645358016174	Marionette	INFO	Listening on port 50634
+1645358016239	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Feb 20, 2022 5:23:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rahulshettyacademy.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rahulshettyacademy.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rahulshettyacademy.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling JbaavcakS ctroi pat  error: resource://gre/modsuynlcesh/rLoongoiuns MamneasgseargPea rfeonrt:."j s"mh,t tlpsi:n//e r1ahulshett3y6a:c aTdyepmeEyr.rcoomr":
+ gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rahulshettyacademy.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+]]></system-err>
+  </testcase>
+  <testcase name="basePageNavigation[restricted@gmail.com, 67855, non resticted user](2)" classname="Academy.HomePage" time="2.128">
+    <system-err><![CDATA[console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rahulshettyacademy.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rahulshettyacademy.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rahulshettyacademy.Jacvoam"S
+cript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rahulshettyacademy.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://rahulshettyacademy.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+]]></system-err>
+  </testcase>
+  <testcase name="linkVerification" classname="Academy.Registration" time="9.001">
+    <system-err><![CDATA[1645358024891	Marionette	INFO	Stopped listening on port 50634
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645358026450	geckodriver	INFO	Listening on 127.0.0.1:25736
+1645358026507	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ATULKU~1.SHA\\AppData\\Local\\Temp\\rust_mozprofileb0NcVI"
+1645358027134	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\atulkumar.sharma\\AppData\\Local\\Temp\\rust_mozprofileb0NcVI\\search.json.mozlz4", (void 0)))
+1645358030041	Marionette	INFO	Listening on port 50876
+1645358030271	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Feb 20, 2022 5:23:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: http://load.sumome.com/, line 1: Error: Loading chunk 7 failed.
+(error: https://load.sumo.com/7.0a035390359aab65eb82.js)
+]]></system-err>
+  </testcase>
+  <testcase name="reg[Atul, katul302@gmail.com, Password@123](1)" classname="Academy.Registration" time="4.702">
+    <system-err><![CDATA[1645358042203	Marionette	INFO	Stopped listening on port 50876
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645358043547	geckodriver	INFO	Listening on 127.0.0.1:29640
+1645358043614	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ATULKU~1.SHA\\AppData\\Local\\Temp\\rust_mozprofilepZPiXd"
+1645358044213	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\atulkumar.sharma\\AppData\\Local\\Temp\\rust_mozprofilepZPiXd\\search.json.mozlz4", (void 0)))
+1645358047826	Marionette	INFO	Listening on port 51206
+1645358047902	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Feb 20, 2022 5:24:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.teachable.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.teachable.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+]]></system-err>
+  </testcase>
+  <testcase name="regPageNavigation" classname="Academy.Registration" time="3.271">
+    <system-err><![CDATA[1645358055753	Marionette	INFO	Stopped listening on port 51206
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.teachable.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+[Parent 53564, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+[Parent 53564, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1645358057441	geckodriver	INFO	Listening on 127.0.0.1:36208
+1645358057513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ATULKU~1.SHA\\AppData\\Local\\Temp\\rust_mozprofileHyoPKD"
+1645358058233	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\atulkumar.sharma\\AppData\\Local\\Temp\\rust_mozprofileHyoPKD\\search.json.mozlz4", (void 0)))
+1645358061585	Marionette	INFO	Listening on port 51553
+1645358061804	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Feb 20, 2022 5:24:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

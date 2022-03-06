@@ -1,0 +1,12 @@
+package com.thvp.pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class OrderSummary {
+
+	public WebDriver driver;
+
+	public OrderSummary(WebDriver driver) {
+		this.driver = driver;
+	}
+}

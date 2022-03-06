@@ -1,0 +1,4 @@
+08:30:08.966 [main] INFO  resources.BaseTest - test4
+08:30:09.101 [main] INFO  resources.BaseTest - test5
+08:30:09.102 [main] INFO  resources.BaseTest - test3
+08:30:09.102 [main] INFO  resources.BaseTest - test4

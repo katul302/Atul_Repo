@@ -1,0 +1,45 @@
+package com.thvp.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class HomePage {
+	
+	public WebDriver driver;
+
+  private By pres_link =	By.linkText("Prescriptions");
+  
+  private By transfer_tile = By.cssSelector(".b-action-card__title");
+  
+  private By model_continue = By.xpath("//div[@class='col-12 general-modal__container']/button");
+  private By pharmacy_name = By.id("FromPharmacyName");
+  
+  
+  
+  public HomePage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public WebElement pres_link() {
+		return driver.findElement(pres_link);
+		
+		
+	}
+	public WebElement transfer_tile() {
+		return driver.findElement(transfer_tile);
+		
+		
+	}
+	public WebElement model_continue() {
+		return driver.findElement(model_continue);
+		
+		
+	}
+	public WebElement pharmacy_name() {
+		return driver.findElement(pharmacy_name);
+		
+		
+	}
+
+}

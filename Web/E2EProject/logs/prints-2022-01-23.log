@@ -1,0 +1,7 @@
+22:46:59.652 [main] INFO  resources.Base - Url response from regestration page: 200
+22:47:00.563 [main] INFO  resources.Base - Url response from regestration page: 200
+22:47:01.132 [main] INFO  resources.Base - Url response from regestration page: 200
+22:47:05.843 [main] INFO  resources.Base - Regsitration page  is displayed
+22:47:16.966 [main] INFO  resources.Base - Regsitration is done
+22:47:16.967 [main] INFO  resources.Base - Login step started
+22:47:18.894 [main] INFO  resources.Base - Login step ended

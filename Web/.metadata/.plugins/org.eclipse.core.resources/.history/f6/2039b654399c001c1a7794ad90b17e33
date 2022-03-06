@@ -1,0 +1,14 @@
+package com.thvp.util;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class Utill {
+
+	prop = new Properties();
+	
+	FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\com\\thvp\\configuration\\common.properties");
+	
+	
+	
+}

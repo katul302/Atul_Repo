@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-20T17:23:08 IST" name="Suite" finished-at="2022-02-20T17:24:29 IST" duration-ms="80700">
+    <groups>
+    </groups>
+    <test started-at="2022-02-20T17:23:08 IST" name="Validating title" finished-at="2022-02-20T17:23:22 IST" duration-ms="14184">
+      <class name="Academy.TitleVerification">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:Academy.TitleVerification@3b00856b]" started-at="2022-02-20T17:23:08 IST" name="intialize" finished-at="2022-02-20T17:23:21 IST" duration-ms="12489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method signature="basePageNavigation()[pri:0, instance:Academy.TitleVerification@3b00856b]" started-at="2022-02-20T17:23:21 IST" name="basePageNavigation" finished-at="2022-02-20T17:23:21 IST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="headerVerification()[pri:0, instance:Academy.TitleVerification@3b00856b]" started-at="2022-02-20T17:23:21 IST" name="headerVerification" finished-at="2022-02-20T17:23:21 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Academy.TitleVerification@3b00856b]" started-at="2022-02-20T17:23:21 IST" name="tearDown" finished-at="2022-02-20T17:23:22 IST" duration-ms="1504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Academy.TitleVerification -->
+    </test> <!-- Validating title -->
+    <test started-at="2022-02-20T17:23:23 IST" name="Nav Bar Validation" finished-at="2022-02-20T17:23:31 IST" duration-ms="8482">
+      <class name="Academy.navigationBarValidation">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:Academy.navigationBarValidation@6b00f608]" started-at="2022-02-20T17:23:23 IST" name="intialize" finished-at="2022-02-20T17:23:30 IST" duration-ms="6917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method signature="basePageNavigation()[pri:0, instance:Academy.navigationBarValidation@6b00f608]" started-at="2022-02-20T17:23:30 IST" name="basePageNavigation" finished-at="2022-02-20T17:23:30 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Academy.navigationBarValidation@6b00f608]" started-at="2022-02-20T17:23:30 IST" name="tearDown" finished-at="2022-02-20T17:23:31 IST" duration-ms="1474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Academy.navigationBarValidation -->
+    </test> <!-- Nav Bar Validation -->
+    <test started-at="2022-02-20T17:23:32 IST" name="Home Page Validation" finished-at="2022-02-20T17:23:46 IST" duration-ms="14194">
+      <class name="Academy.HomePage">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:Academy.HomePage@13518f37]" started-at="2022-02-20T17:23:32 IST" name="intialize" finished-at="2022-02-20T17:23:36 IST" duration-ms="4244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.HomePage@13518f37]" started-at="2022-02-20T17:23:36 IST" name="basePageNavigation" data-provider="getData" finished-at="2022-02-20T17:23:42 IST" duration-ms="6437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricted@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.HomePage@13518f37]" started-at="2022-02-20T17:23:42 IST" name="basePageNavigation" data-provider="getData" finished-at="2022-02-20T17:23:44 IST" duration-ms="2138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricted@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[67855]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[non resticted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Academy.HomePage@13518f37]" started-at="2022-02-20T17:23:44 IST" name="tearDown" finished-at="2022-02-20T17:23:46 IST" duration-ms="1367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Academy.HomePage -->
+    </test> <!-- Home Page Validation -->
+    <test started-at="2022-02-20T17:23:46 IST" name="Registration" finished-at="2022-02-20T17:24:29 IST" duration-ms="43146">
+      <class name="Academy.Registration">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:Academy.Registration@44e3a2b2]" started-at="2022-02-20T17:23:46 IST" name="intialize" finished-at="2022-02-20T17:23:53 IST" duration-ms="6844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method signature="linkVerification()[pri:0, instance:Academy.Registration@44e3a2b2]" started-at="2022-02-20T17:23:53 IST" name="linkVerification" finished-at="2022-02-20T17:24:02 IST" duration-ms="9042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Academy.Registration@44e3a2b2]" started-at="2022-02-20T17:24:02 IST" name="tearDown" finished-at="2022-02-20T17:24:03 IST" duration-ms="1224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="intialize()[pri:0, instance:Academy.Registration@44e3a2b2]" started-at="2022-02-20T17:24:03 IST" name="intialize" finished-at="2022-02-20T17:24:11 IST" duration-ms="7614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method signature="reg(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.Registration@44e3a2b2]" started-at="2022-02-20T17:24:11 IST" name="reg" data-provider="getData" finished-at="2022-02-20T17:24:15 IST" duration-ms="4712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Atul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[katul302@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reg -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Academy.Registration@44e3a2b2]" started-at="2022-02-20T17:24:15 IST" name="tearDown" finished-at="2022-02-20T17:24:17 IST" duration-ms="1533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="intialize()[pri:0, instance:Academy.Registration@44e3a2b2]" started-at="2022-02-20T17:24:17 IST" name="intialize" finished-at="2022-02-20T17:24:24 IST" duration-ms="7401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method signature="regPageNavigation()[pri:0, instance:Academy.Registration@44e3a2b2]" started-at="2022-02-20T17:24:24 IST" name="regPageNavigation" finished-at="2022-02-20T17:24:27 IST" duration-ms="3273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regPageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Academy.Registration@44e3a2b2]" started-at="2022-02-20T17:24:27 IST" name="tearDown" finished-at="2022-02-20T17:24:29 IST" duration-ms="1497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Academy.Registration -->
+    </test> <!-- Registration -->
+  </suite> <!-- Suite -->
+</testng-results>

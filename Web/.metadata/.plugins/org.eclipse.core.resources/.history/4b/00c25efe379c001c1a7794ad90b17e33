@@ -1,0 +1,85 @@
+package com.thvp.test;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.thvp.base.TestBase;
+import com.thvp.pages.CheckOut;
+import com.thvp.pages.HomePage;
+import com.thvp.pages.OrderSummary;
+
+public class TransferPrescription extends TestBase {
+
+	public static Logger log = LogManager.getLogger(TestBase.class.getName());
+	
+	public HomePage hp;
+	public OrderSummary os;
+	public CheckOut ck;
+	
+	public Login lp;
+	
+	@Parameters({"Email","Password","Pharmacy","Phone"})
+	
+	@Test(enabled=false)
+	
+	public  void transfer_test1(String Email,String Password, String Pharmacy,String Phone) throws Exception {
+		
+		String actual_confirmation_text  = "Your transfer request has been submitted";
+		lp = new Login();
+		hp = new HomePage(driver);
+		lp.loginTest(Email,Password);
+		
+		hp.pres_link().click();
+		hp.transfer_tile().click();
+		Thread.sleep(2000);
+		hp.model_continue().click();
+		hp.pharmacy_name().sendKeys(Pharmacy);
+		hp.pharmcy_phone_number().sendKeys(Phone);
+		hp.continue_btn().click();
+		hp.comment().sendKeys("Test Notes");
+		hp.submit().click();
+		String confirmation_text = hp.confirmation_text().getText();
+		
+		
+		Assert.assertEquals(actual_confirmation_text, confirmation_text);
+		
+		log.info("test 1 is complete for transfer flow");
+		hp.return_btn().click();
+		log.info("Return to home screen");
+	}
+	@Parameters({"Email","Password","Pharmacy","Phone"})
+	@Test
+	public void transfer_test2(String Email,String Password,String Pharmacy, String Phone) throws Exception { 
+		
+		lp = new Login();
+		hp = new HomePage(driver);
+		os = new OrderSummary(driver);
+		ck = new CheckOut(driver);
+		lp.loginTest(Email,Password);
+		
+		hp.pres_link().click();
+		hp.transfer_tile().click();
+		Thread.sleep(2000);
+		hp.model_continue().click();
+		hp.pharmacy_name().sendKeys(Pharmacy);
+		hp.pharmcy_phone_number().sendKeys(Phone);
+		hp.continue_btn().click();
+		hp.radio4().click();
+		hp.comment().sendKeys("Test Notes");
+		hp.submit().click();
+		
+		Thread.sleep(2000);
+		
+		os.proceed().click();
+		
+		
+		
+		
+		
+		
+	} 
+	}
+	

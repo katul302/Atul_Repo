@@ -1,0 +1,26 @@
+package com.thvp.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class CheckOut {
+	
+	public WebDriver driver;
+	
+////*[text()[contains(.,'complete')]]
+	
+	private By alt_add_radio = By.xpath("//*[@for='alternateAddress']/span']");
+	private By add_l1 = By.xpath("//*[@placeholder='Street name']");
+	private By add_l2 = By.name("DeliverToAddress2");
+	
+	public CheckOut(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public WebElement alt_add_radio()
+	{
+		return driver.findElement(alt_add_radio);
+	}
+
+}

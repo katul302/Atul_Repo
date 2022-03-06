@@ -1,0 +1,6 @@
+17:23:57.404 [main] INFO  resources.Base - Login - https://sso.teachable.com/secure/9521/identity/login
+17:23:57.409 [main] INFO  resources.Base - Count of Link on Regestration page is: 6
+17:23:58.260 [main] INFO  resources.Base - Url response from regestration page: 200
+17:23:58.706 [main] INFO  resources.Base - Url response from regestration page: 200
+17:23:59.207 [main] INFO  resources.Base - Url response from regestration page: 200
+17:24:01.498 [main] INFO  resources.Base - Url response from regestration page: 200

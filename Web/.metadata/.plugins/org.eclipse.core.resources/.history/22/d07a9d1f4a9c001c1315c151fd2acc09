@@ -1,0 +1,63 @@
+package com.thvp.util;
+
+import java.io.FileInputStream;
+
+import java.io.IOException;
+import java.util.Properties;
+
+import jdk.internal.org.jline.utils.Log;
+
+
+public class Utill {
+
+	public String Address_L1;
+	public String Address_L2;
+	public String city;
+	public String Postal;
+	public String Delivery_phone;
+	public String Ext;
+	public Properties prop;
+
+	public void getProp() throws IOException {
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream(
+				System.getProperty("user.dir") + "\\src\\test\\java\\com\\thvp\\configuration\\common.properties");
+		prop.load(fis);
+		
+		String Address_L1 = prop.getProperty("Address1");
+		
+		
+		String Address_L2 = prop.getProperty("Address2");
+		String city = prop.getProperty("City");
+		String Postal = prop.getProperty("Postal");
+		String Delivery_phone = prop.getProperty("Delivery");
+		
+		
+		String Ext = prop.getProperty("Ext");
+		
+		System.out.println(Address_L1);
+		System.out.println(Address_L2);
+		System.out.println(city);
+		System.out.println(Postal);
+		System.out.println(Delivery_phone);
+		System.out.println(Ext);
+		
+		this.Address_L1 = Address_L1;
+		this.Address_L2 = Address_L2;
+		this.city = city;
+		this.Postal = Postal;
+		this.Delivery_phone = Delivery_phone;
+		this.Ext = Ext;
+		
+		
+		
+		
+
+	}
+	
+//	public static void main(String[] args) throws IOException {
+//		Utill u = new Utill();
+//		u.getProp();
+//	}
+
+}

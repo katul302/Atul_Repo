@@ -1,0 +1,10 @@
+08:30:08.475 [main] INFO  resources.BaseTest - test3
+08:30:08.489 [main] INFO  resources.BaseTest - test4
+08:30:08.695 [main] INFO  resources.BaseTest - test5
+08:30:08.695 [main] INFO  resources.BaseTest - test3
+08:30:08.695 [main] INFO  resources.BaseTest - test4
+08:30:08.825 [main] INFO  resources.BaseTest - test5
+08:30:08.826 [main] INFO  resources.BaseTest - test3
+08:30:08.826 [main] INFO  resources.BaseTest - test4
+08:30:08.965 [main] INFO  resources.BaseTest - test5
+08:30:08.965 [main] INFO  resources.BaseTest - test3

@@ -1,0 +1,13 @@
+package com.thvp.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Consultation {
+
+	public WebDriver driver;
+	
+	private By ph = By.id("patientConsultations_0__PhoneNumber");
+	
+	
+}

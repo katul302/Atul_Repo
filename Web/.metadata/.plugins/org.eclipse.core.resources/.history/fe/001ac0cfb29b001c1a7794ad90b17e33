@@ -1,0 +1,31 @@
+package com.thvp.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class HomePage {
+	
+	public WebDriver driver;
+
+  private By pres_link =	By.linkText("Prescriptions");
+  
+  private By transfer_tile = By.cssSelector(".b-action-card__title");
+  
+  
+  public HomePage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public WebElement pres_link() {
+		return driver.findElement(pres_link);
+		
+		
+	}
+	public WebElement transfer_tile() {
+		return driver.findElement(transfer_tile);
+		
+		
+	}
+
+}
