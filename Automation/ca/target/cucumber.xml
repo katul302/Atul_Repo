@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="56.394">
+    <testcase classname="Landing Page Verification" name="Verify Logo of Landing Page" time="14.257">
+        <system-out><![CDATA[Given User launch the URL...................................................passed
+When User is on landing page................................................passed
+Then Get the logo...........................................................passed
+And Verify logo title.......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Landing Page Verification" name="Verify sing link functionality" time="25.969">
+        <system-out><![CDATA[Given User launch the URL...................................................passed
+When User click on sign link................................................passed
+Then User should land on AUTHENTICATION screen..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Landing Page Verification" name="Count link on the landing page" time="15.996">
+        <failure message="expected [49] but found [149]" type="java.lang.AssertionError"><![CDATA[Given User launch the URL...................................................passed
+When User is on landing page................................................passed
+Then Get link count on the landing page.....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [49] but found [149]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at stepDefinations.stepDefinations.get_link_count_on_the_landing_page(stepDefinations.java:91)
+	at ✽.Get link count on the landing page(file:///D:/Automation/ca/src/test/java/features/LandingPage.feature:40)
+]]></failure>
+    </testcase>
+</testsuite>

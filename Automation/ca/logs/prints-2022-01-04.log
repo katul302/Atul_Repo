@@ -1,0 +1,7 @@
+18:10:08.865 [main] INFO  resources.BaseTest - Verification of auth page
+18:10:08.905 [main] INFO  resources.BaseTest - Heading of signup page is :AUTHENTICATION
+18:10:08.905 [main] INFO  resources.BaseTest - Sign in Link is working fine
+18:10:08.968 [main] INFO  resources.BaseTest - Launching url in browser
+18:10:24.806 [main] INFO  resources.BaseTest - User land on landing page
+18:10:24.847 [main] INFO  resources.BaseTest - Test Step pass
+18:10:24.850 [main] INFO  resources.BaseTest - Get link count test case started

@@ -1,0 +1,246 @@
+[
+  {
+    "line": 21,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-04T12:39:28.722Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2103500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.before()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify Logo of Landing Page",
+        "description": "",
+        "id": "landing-page-verification;verify-logo-of-landing-page",
+        "after": [
+          {
+            "result": {
+              "duration": 49805700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14055610200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User launch the URL",
+            "match": {
+              "location": "stepDefinations.stepDefinations.user_launch_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58776000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepDefinations.stepDefinations.user_is_on_landing_oage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24542400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Get the logo",
+            "match": {
+              "location": "stepDefinations.stepDefinations.get_the_logo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3033700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Verify logo title",
+            "match": {
+              "location": "stepDefinations.stepDefinations.verify_logo_title()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-04T12:39:42.988Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.before()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Verify sing link functionality",
+        "description": "",
+        "id": "landing-page-verification;verify-sing-link-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 51811100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13704046900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User launch the URL",
+            "match": {
+              "location": "stepDefinations.stepDefinations.user_launch_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12166532800,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User click on sign link",
+            "match": {
+              "location": "stepDefinations.stepDefinations.user_click_on_sign_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41937900,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User should land on AUTHENTICATION screen",
+            "match": {
+              "location": "stepDefinations.stepDefinations.user_should_land_on_authentication_screen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-04T12:40:08.963Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.before()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Count link on the landing page",
+        "description": "",
+        "id": "landing-page-verification;count-link-on-the-landing-page",
+        "after": [
+          {
+            "result": {
+              "duration": 61835700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15838056700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User launch the URL",
+            "match": {
+              "location": "stepDefinations.stepDefinations.user_launch_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41878800,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepDefinations.stepDefinations.user_is_on_landing_oage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [49] but found [149]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:907)\r\n\tat org.testng.Assert.assertEquals(Assert.java:917)\r\n\tat stepDefinations.stepDefinations.get_link_count_on_the_landing_page(stepDefinations.java:91)\r\n\tat ✽.Get link count on the landing page(file:///D:/Automation/ca/src/test/java/features/LandingPage.feature:40)\r\n",
+              "duration": 40954900,
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "Get link count on the landing page",
+            "match": {
+              "location": "stepDefinations.stepDefinations.get_link_count_on_the_landing_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          }
+        ]
+      }
+    ],
+    "name": "Landing Page Verification",
+    "description": "",
+    "id": "landing-page-verification",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/LandingPage.feature",
+    "tags": []
+  }
+]
