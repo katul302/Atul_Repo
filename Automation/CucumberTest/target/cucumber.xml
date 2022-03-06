@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="92.203">
+    <testcase classname="Search and Place order for Veggie" name="Search for item and validate result" time="32.978">
+        <system-out><![CDATA[Given User is on GreenCart landing page.....................................passed
+When User search for "Cucumber" Vegetable...................................passed
+Then "Cucumber" result are displayed........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search and Place order for Veggie" name="Search for item and then move to checkout page" time="26.536">
+        <system-out><![CDATA[Given User is on GreenCart landing page.....................................passed
+When User search for "Brinjal" Vegetable....................................passed
+And Added item to Cart......................................................passed
+And User proceed to Checkout page...........................................passed
+Then Verify selected "Brinjal" items are displayed in checkout page.........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search and Place order for Veggie" name="Search for item and then move to checkout page 2" time="32.319">
+        <system-out><![CDATA[Given User is on GreenCart landing page.....................................passed
+When User search for "Beetroot" Vegetable...................................passed
+And Added item to Cart......................................................passed
+And User proceed to Checkout page...........................................passed
+Then User should apply the promo code.......................................passed
+And Place the order.........................................................passed
+And User should choose the county...........................................passed
+And Select the radio button.................................................passed
+And User should be able Proceed.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
