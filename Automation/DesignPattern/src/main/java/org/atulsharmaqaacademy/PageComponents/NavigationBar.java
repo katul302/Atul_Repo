@@ -20,6 +20,7 @@ public class NavigationBar extends AbstractComponent {
     }
 
     public int getLinkCount(){
+
         return findElements(link).size();
     }
 
