@@ -1,6 +1,8 @@
 package org.atulsharmaqaacademy.AbstractComponents;
 
+import java.util.HashMap;
+
 public interface SearchFlightAvail {
 
-    void checkAvail(String origin, String destination) throws InterruptedException;
+    void checkAvail(HashMap<String,String> reservationsdetails) throws InterruptedException;
 }

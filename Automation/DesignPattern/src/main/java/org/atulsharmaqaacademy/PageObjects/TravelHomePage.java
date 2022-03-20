@@ -8,6 +8,8 @@ import org.atulsharmaqaacademy.PageComponents.NavigationBar;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.HashMap;
+
 public class TravelHomePage {
     WebDriver driver;
     By sectionElement = By.id("traveller-home");
@@ -43,10 +45,10 @@ public class TravelHomePage {
 
     }
 
-    public void checkAvail(String origin,String destination) throws InterruptedException {
+    public void checkAvail(HashMap<String,String> reservationsdetails) throws InterruptedException {
 
 
 
-        searchFlightAvail.checkAvail(origin,destination);
+        searchFlightAvail.checkAvail(reservationsdetails);
     }
 }
