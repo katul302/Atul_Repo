@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="3" ignored="0" total="8" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-26T11:51:34 EST" name="Suite" finished-at="2023-01-26T11:53:16 EST" duration-ms="102191">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationTest.loginErrorValidation()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" name="loginErrorValidation" class="atulpracticecompany.tests.ErrorValidationTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" name="submitOrder" class="atulpracticecompany.tests.SubmitOrderTest"/>
+      </group> <!-- purchase -->
+    </groups>
+    <test started-at="2023-01-26T11:51:34 EST" name="ErrorValidation Test" finished-at="2023-01-26T11:53:11 EST" duration-ms="96996">
+      <class name="atulpracticecompany.tests.ErrorValidationTest">
+        <test-method is-config="true" signature="launcApplication()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:51:34 EST" name="launcApplication" finished-at="2023-01-26T11:52:29 EST" duration-ms="54716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcApplication -->
+        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:29 EST" name="loginErrorValidation" finished-at="2023-01-26T11:52:30 EST" duration-ms="1385" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect  or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect  or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at atulpracticecompany.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:30 EST" name="tearDown" finished-at="2023-01-26T11:52:31 EST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launcApplication()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:31 EST" name="launcApplication" finished-at="2023-01-26T11:52:38 EST" duration-ms="7079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcApplication -->
+        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:38 EST" name="loginErrorValidation" finished-at="2023-01-26T11:52:39 EST" duration-ms="900" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect  or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect  or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at atulpracticecompany.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:39 EST" name="tearDown" finished-at="2023-01-26T11:52:39 EST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launcApplication()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:39 EST" name="launcApplication" finished-at="2023-01-26T11:52:47 EST" duration-ms="7888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcApplication -->
+        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:47 EST" name="loginErrorValidation" finished-at="2023-01-26T11:52:49 EST" duration-ms="2271" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect  or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect  or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at atulpracticecompany.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:49 EST" name="tearDown" finished-at="2023-01-26T11:52:50 EST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launcApplication()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:50 EST" name="launcApplication" finished-at="2023-01-26T11:52:57 EST" duration-ms="7194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:57 EST" name="loginErrorValidation" finished-at="2023-01-26T11:52:58 EST" duration-ms="1118" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect  or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect  or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at atulpracticecompany.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:58 EST" name="tearDown" finished-at="2023-01-26T11:52:59 EST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launcApplication()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:52:59 EST" name="launcApplication" finished-at="2023-01-26T11:53:08 EST" duration-ms="9124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:53:08 EST" name="productErrorValidation" finished-at="2023-01-26T11:53:10 EST" duration-ms="2550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atulpracticecompany.tests.ErrorValidationTest@5e7cd6cc]" started-at="2023-01-26T11:53:10 EST" name="tearDown" finished-at="2023-01-26T11:53:11 EST" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- atulpracticecompany.tests.ErrorValidationTest -->
+    </test> <!-- ErrorValidation Test -->
+    <test started-at="2023-01-26T11:51:34 EST" name="Submit Order Test" finished-at="2023-01-26T11:53:16 EST" duration-ms="102191">
+      <class name="atulpracticecompany.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launcApplication()[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" started-at="2023-01-26T11:51:34 EST" name="launcApplication" finished-at="2023-01-26T11:52:28 EST" duration-ms="54180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" started-at="2023-01-26T11:52:28 EST" name="submitOrder" data-provider="getData" finished-at="2023-01-26T11:52:42 EST" duration-ms="13349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Welcome@123, email=katul302@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" started-at="2023-01-26T11:52:42 EST" name="tearDown" finished-at="2023-01-26T11:52:42 EST" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launcApplication()[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" started-at="2023-01-26T11:52:42 EST" name="launcApplication" finished-at="2023-01-26T11:52:52 EST" duration-ms="9396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" started-at="2023-01-26T11:52:52 EST" name="submitOrder" data-provider="getData" finished-at="2023-01-26T11:53:06 EST" duration-ms="14540" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=1@34567bA, email=atulkumar.sharma38@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" started-at="2023-01-26T11:53:06 EST" name="tearDown" finished-at="2023-01-26T11:53:07 EST" duration-ms="549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launcApplication()[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" started-at="2023-01-26T11:53:07 EST" name="launcApplication" finished-at="2023-01-26T11:53:15 EST" duration-ms="8260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcApplication -->
+        <test-method signature="orderHistory()[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" started-at="2023-01-26T11:53:15 EST" name="orderHistory" finished-at="2023-01-26T11:53:16 EST" depends-on-methods="atulpracticecompany.tests.SubmitOrderTest.submitOrder" duration-ms="916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:atulpracticecompany.tests.SubmitOrderTest@5890e879]" started-at="2023-01-26T11:53:16 EST" name="tearDown" finished-at="2023-01-26T11:53:16 EST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- atulpracticecompany.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
